@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+nav{
+    display: block;
+}
+.sale{
+    background-color: #28588C;
+    padding: 5px;
+    color: rgb(234, 234, 234);
+    font-size: 0.9rem;
+
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sale p{
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.hero{
+    min-height: 50vh;
+    background: url("bg.jpg") center/cover no-repeat;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.hero h3{
+    font-size: 1.8rem;
+}
+
+.hero a{
+    background-color: #376eaa;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    color: white;
+    text-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+
+main{
+    padding: 30px 200px;
+}
+.main-title{
+    padding: 0 35px;
+}
+.card-container{
+    margin-top: 30px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.card h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.card-img{
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.btn-more{
+    background-color: #3A8C28;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    
+    color: white;
+    text-shadow: none;
+    margin-top: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.side{
+
+    margin: 0 200px;
+    background-color: rgb(216, 216, 216);
+    width: 1080px;
+    height: 2px;
+}
+.where{
+    margin: 50px 230px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 1.4rem;
+}
+
+.where-text{
+    display: flex;
+    flex-direction: column;
+}
+.where-text p{
+    margin-top: 25px;
+    font-size: 1.3rem;
+}
+  
+.where-text a{
+    background-color: #3A8C28;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    width: 300px;
+    color: white;
+    text-shadow: none;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+iframe{
+    border-radius: 30px;
+}
+
+footer{
+    background-color: #363636;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bar{
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.bar h5{
+    margin-bottom: 20px;
+}
+
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.hero a:hover{
+    background-color: #28588C;
+}
+
+.btn-more:hover{
+    background-color: #245718;
+}
+
+.where-text a:hover{
+    background-color: #245718;
+}
+
+.back{
+    color: #245718;
+    font-size: 1.2rem;
+}
+
+.item{
+    margin-top: 60px;
+    display: flex;
+    gap: 60px;
+}
+
+.item-text h1{
+    font-size: 3.1rem;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.item-p{
+    font-size: 1.2rem;
+    width: 420px;
+    color: grey;
+    margin: 30px 0;
+    margin-bottom: 20px;
+}
+
+.side1{
+    margin: 40px 0;
+    background-color: rgb(216, 216, 216);
+    width: 400px;
+    height: 2px;
+}
+
+.price{
+    color: #245718;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+ul{
+    list-style: none;
+    line-height: normal;
+}
+ul p{
+    border: 2px solid grey;
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px 0;
+    color: grey;
+    font-weight: bold;
+    text-align: center;
+}
